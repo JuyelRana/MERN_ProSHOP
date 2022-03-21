@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server",
+    "start": "PORT=5000 node backend/server",
     "server": "nodemon backend/server",
     "client": "PORT=3003 npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
